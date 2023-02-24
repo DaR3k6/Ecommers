@@ -53,3 +53,8 @@
   white-space: nowrap;
   -webkit-overflow-scrolling: touch;
 }
+body {
+  background-image: url("/asset/media/imagen.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

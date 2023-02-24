@@ -16,20 +16,21 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="./asset/css/estilo.css" />
   </head>
   <body class="text-center">
     <main class="form-signin w-100 m-auto">
       <form>
         <img
-          class="mb-4"
+          class="mb-4 rounded mx-auto d-block mt-3"
           src="./asset/media/logo.png"
-          alt=""
+          alt="logo.png"
           width="200"
           height="200"
         />
         <h1 class="h3 mb-3 fw-normal">Iniciar Sesion</h1>
 
-        <div class="form-floating">
+        <div class="form-floating text-aling col-6 mx-auto">
           <input
             type="email"
             class="form-control"
@@ -38,7 +39,7 @@
           />
           <label for="floatingInput">Correo</label>
         </div>
-        <div class="form-floating">
+        <div class="form-floating text-aling col-6 mx-auto mt-3">
           <input
             type="password"
             class="form-control"
@@ -48,10 +49,10 @@
           <label for="floatingPassword">Contaseña</label>
         </div>
 
-        <div class="checkbox mb-3"></div>
+        <div class="d-grid"></div>
         <button
           id="btnInicarSesion"
-          class="w-100 btn btn-lg btn-primary"
+          class="btn btn-success bg-success p-2 text-white bg-opacity-75 text-black justify-content-center mt-3"
           type="submit"
         >
           INICIAR SESIÓN

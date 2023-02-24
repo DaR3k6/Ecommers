@@ -28,65 +28,48 @@
           width="200"
           height="200"
         />
-        <h1 class="h3 mb-3 fw-normal">REGISTRO</h1>
+        <h1 class="h3 mb-3 fw-normal">CREAR PRODUCTO</h1>
 
-        <div class="form-floating text-aling col-6 mx-auto mt-3">
-          <input
-            type="text"
-            class="form-control"
-            id="nombreInput"
-            placeholder="Password"
-          />
-          <label for="floatingPassword">Nombre</label>
-        </div>
-
-        <div class="form-floating text-aling col-6 mx-auto mt-3">
-          <input
-            type="text"
-            class="form-control"
-            id="apellidoInput"
-            placeholder="Password"
-          />
-          <label for="floatingPassword">Apellido</label>
-        </div>
-
-        <div class="form-floating text-aling col-6 mx-auto mt-3">
+        <div class="form-floating text-aling col-6 mx-auto">
           <input
             type="email"
             class="form-control"
-            id="correoInput"
-            placeholder="name@example.com"
+            id="nombreInput"
+            placeholder="Nombre"
           />
-          <label for="floatingInput">Correo</label>
-        </div>
-        <div class="form-floating text-aling col-6 mx-auto mt-3">
-          <input
-            type="password"
-            class="form-control"
-            id="contraseñaInput"
-            placeholder="Password"
-          />
-          <label for="floatingPassword">Contaseña</label>
+          <label for="floatingInput">Nombre</label>
         </div>
 
-        <div class="form-floating text-aling col-6 mx-auto mt-3">
-          <select
-            id="roles"
-            class="form-select"
-            aria-label="Default select example"
+        <div class="mb-3 text-aling col-6 mx-auto mt-3 mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label h3"
+            >Descripcion del producto</label
           >
-            <option value="1">Administrador</option>
-            <option value="2">Cliente</option>
-          </select>
+          <textarea
+            class="form-control form-control-md"
+            id="exampleFormControlTextarea1"
+            rows="5"
+          ></textarea>
+        </div>
+
+        <div class="col-6 mx-auto mt-3 mb-3">
+          <label for="basic-url" class="form-label h3">Link de la imagen</label>
+          <div class="input-group">
+            <input
+              type="text"
+              class="form-control"
+              id="basic-url"
+              aria-describedby="basic-addon3"
+            />
+          </div>
         </div>
 
         <div class="d-grid"></div>
         <button
-          id="btnRegistrarse"
+          id="btnInicarSesion"
           class="btn btn-success bg-success p-2 text-white bg-opacity-75 justify-content-center mt-3"
           type="submit"
         >
-          REGISTARSE
+          CREAR PRODUCTO
         </button>
         <p class="mt-5 mb-3 text-muted">&copy; 2017–2022</p>
       </form>
@@ -98,6 +81,5 @@
     ></script>
     <script src="./asset/js/funciones.js"></script>
     <script src="./asset/js/main.js"></script>
-    <script src="./asset/js/registrarse.js"></script>
   </body>
 </html>

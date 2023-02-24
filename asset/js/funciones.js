@@ -3,7 +3,7 @@ const guardarRegistro = (baseDatos, registrar) => {
   if (email.test(registrar.correo)) {
     baseDatos.setItem(registrar.id, JSON.stringify(registrar));
     alert("CORREO REGISTRADO " + registrar.correo);
-    window.location.href = "./iniciarSesion.html";
+    window.open("http://127.0.0.1:5500/registrarse.html");
   } else {
     alert("CORREO INCORRECTO " + registrar.correo);
   }
@@ -17,7 +17,7 @@ const inicioSesion = baseDatos => {
   const usuario = JSON.parse(baseDatos.getItem(llaves));
   if (usuario.correo === correo && usuario.contraseña === contraseña) {
     alert("Bienvenido a la página web.");
-    window.location.href = "./index.html";
+    window.open("http://127.0.0.1:5500/index.html");
   } else {
     alert("Correo o contraseña incorrectos.");
   }
@@ -25,20 +25,21 @@ const inicioSesion = baseDatos => {
 //CAMBIO DE ROLES
 const cambiarRoles = baseDatos => {
   const llaves = Object.keys(baseDatos);
-  const colapse = document.querySelector("#colapse");
-  colapse.innerHTML = "";
-
+  const dosBotones = document.querySelector("#dosBotones");
   llaves.forEach(element => {
     const usuario = JSON.parse(baseDatos.getItem(element));
-
     if (usuario.roles == 1) {
       const boton = document.createElement("button");
       boton.setAttribute("class", "btn btn-success");
-      boton.innerHTML = `<i class="bi bi-person-fill"></i> ${usuario.nombre}`;
-      colapse.appendChild(boton);
-
-      boton.addEventListener("click", () => {});
-    } else if (usuario.roles == 2) {
+      boton.innerHTML = `<i class="bi bi-person-fill"></i>${usuario.nombre}`;
+      dosBotones.appendChild(boton);
+    } else {
+      cambiarRoles(baseDatos);
     }
   });
+};
+
+//CREO EL PRODUCTO
+const crearProducto = () => {
+  Window.open("/http://127.0.0.1:5500/crearProducto.html");
 };
