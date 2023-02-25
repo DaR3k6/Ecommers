@@ -19,6 +19,10 @@
     <link rel="stylesheet" href="./asset/css/estilo.css" />
   </head>
   <body class="text-center">
+    <nav class="navbar navbar-expand-md fixed-top">
+      <div id="botonSalir" class="container-fluid"></div>
+    </nav>
+
     <main class="form-signin w-100 m-auto">
       <form>
         <img
@@ -46,7 +50,7 @@
           >
           <textarea
             class="form-control form-control-md"
-            id="exampleFormControlTextarea1"
+            id="descripcionInput"
             rows="5"
           ></textarea>
         </div>
@@ -57,7 +61,7 @@
             <input
               type="text"
               class="form-control"
-              id="basic-url"
+              id="imagenUrl"
               aria-describedby="basic-addon3"
             />
           </div>
@@ -65,7 +69,7 @@
 
         <div class="d-grid"></div>
         <button
-          id="btnInicarSesion"
+          id="btnCrear"
           class="btn btn-success bg-success p-2 text-white bg-opacity-75 justify-content-center mt-3"
           type="submit"
         >
@@ -80,6 +84,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="./asset/js/funciones.js"></script>
-    <script src="./asset/js/main.js"></script>
+    <script src="./asset/js/productosDB.js"></script>
+    <script src="./asset/js/productos.js"></script>
   </body>
 </html>
